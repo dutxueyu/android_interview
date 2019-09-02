@@ -122,7 +122,7 @@ EventBus的基础使用流程就是这样的。
 使用起来很简单，通过`@Subscribe(threadMode = ThreadMode.MainThread)`即可指定。
 下面具体介绍下ThreadMode。
 
-关于ThreadMode，一共有四种模式PostThread，PostThread，BackgroundThread以及Async。
+关于ThreadMode，一共有四种模式PostThread，MainThread，BackgroundThread以及Async。
 
 **PostThread：**事件的处理在和事件的发送在相同的进程，所以事件处理时间不应太长，不然影响事件的发送线程。
 
